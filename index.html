@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python 2D Game (Phaser)</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <style>
+      /* Ensure the game canvas takes up the full screen and the body doesn't scroll */
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #000;
+        overscroll-behavior: none;
+        touch-action: none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      #app {
+        width: 100%;
+        height: 100%;
+      }
+      canvas {
+      display: block;
+      touch-action: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <div id="cv-popup" style="
+      position: fixed; 
+      inset: 0;
+      display: none; /* Controlled by RoomScene.js */
+      align-items: center; 
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.7); /* Darkened for better focus */
+      z-index: 9999;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    ">
+      <div style="
+        width: min(720px, 92vw);
+        background: #111;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 14px;
+        padding: 24px;
+        color: #fff;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+      ">
+        <div style="display: flex; justify-content: space-between; gap: 12px; align-items: center; margin-bottom: 15px;">
+          <h3 id="cv-popup-title" style="margin: 0; font-size: 22px; color: #4dabf7;">Title</h3>
+          <button id="cv-popup-close" style="
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-radius: 8px;
+            padding: 6px 14px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+          " onmouseover="this.style.background='rgba(255,255,255,0.15)'" 
+             onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+            CLOSE (ESC)
+          </button>
+        </div>
+        
+        <div id="cv-popup-text" style="
+          font-size: 16px; 
+          line-height: 1.6; 
+          opacity: 0.95;
+          min-height: 50px;
+          white-space: pre-wrap; /* Preserves line breaks from Tiled */
+        "></div>
+        
+        <div style="margin-top: 20px; font-size: 12px; opacity: 0.5; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;">
+          Interaction Hint: Use WASD to move away or press ESC to resume.
+        </div>
+      </div>
+    </div>
+    
+
+    <script type="module" src="/src/main.js"></script>
+
+    <div id="rotate-overlay">
+      <div>
+        <h2>Please rotate your phone</h2>
+        <p>This game is designed for landscape mode.</p>
+      </div>
+    </div>
+  </body>
+</html>
