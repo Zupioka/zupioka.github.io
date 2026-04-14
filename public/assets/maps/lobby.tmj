@@ -784,7 +784,7 @@
                 {
                  "height":33.25,
                  "id":39,
-                 "name":"Normandie Incubation",
+                 "name":"Normandie Incubation (2018-2019)",
                  "properties":[
                         {
                          "name":"icon",
@@ -821,7 +821,7 @@
                 {
                  "height":31.75,
                  "id":40,
-                 "name":"BDP",
+                 "name":"Bureau de Prod. (2019-2020)",
                  "properties":[
                         {
                          "name":"icon",
@@ -858,7 +858,7 @@
                 {
                  "height":31.5,
                  "id":41,
-                 "name":"etena",
+                 "name":"P\u00e9pite Etena (2021-2022)",
                  "properties":[
                         {
                          "name":"icon",
@@ -895,7 +895,7 @@
                 {
                  "height":31.8333333333333,
                  "id":42,
-                 "name":"Centech",
+                 "name":"Centech (2023-2025)",
                  "properties":[
                         {
                          "name":"icon",
