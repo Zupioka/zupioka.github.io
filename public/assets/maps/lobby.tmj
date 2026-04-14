@@ -804,7 +804,7 @@
                         {
                          "name":"title",
                          "type":"string",
-                         "value":"Normandie Incubation"
+                         "value":"Normandie Incubation (2018-2019)"
                         }, 
                         {
                          "name":"type",
@@ -841,7 +841,7 @@
                         {
                          "name":"title",
                          "type":"string",
-                         "value":"BDP"
+                         "value":"Bureau de Prod. (2019-2020)"
                         }, 
                         {
                          "name":"type",
@@ -878,7 +878,7 @@
                         {
                          "name":"title",
                          "type":"string",
-                         "value":"etena"
+                         "value":"P\u00e9pite Etena (2021-2022)"
                         }, 
                         {
                          "name":"type",
@@ -915,7 +915,7 @@
                         {
                          "name":"title",
                          "type":"string",
-                         "value":"Centech"
+                         "value":"Centech (2023-2025)"
                         }, 
                         {
                          "name":"type",
